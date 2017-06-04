@@ -1,5 +1,4 @@
-package com.sks
-.abstractfactory.example;
+package com.sks.abstractfactory.example;
 
 public class AbstractFactoryClient {
 	
@@ -8,7 +7,6 @@ public class AbstractFactoryClient {
 		new ConsumeFruitFactory(getFruitDetail("Orange"));
 	}
 
-	
 	public static FruitsFactory getFruitDetail(String type) {
 		if("Orange".equalsIgnoreCase(type)) {
 			return new OrangeFactory();
@@ -19,7 +17,5 @@ public class AbstractFactoryClient {
 		}else {
 			return null;
 		}
-		
 	}
-	
 }
